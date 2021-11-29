@@ -40,30 +40,30 @@ We are using here lots of library such as chakra-ui/react for styling the app al
 
 
 ## step-01
-  * create Banner into index.html.
-  * config image optimization in next.config.js
+  * create `Banner Component` into index.html.
+  * config `image optimization` in next.config.js
 
  ## step-02
    * create a folder utils 
-   * create file fetchApi.js
+   * create file `fetchApi.js`
    * fetch Api fetch url and return response.
 
  ## step-3
-   * index.js --> create getStaticProps async function
+   * index.js --> create `getStaticProps async function`
    * call fetchApi function and pass api endpoint url with help of baseurl .
    * return props object has response of properties for sale and rent .
    
-   Note : getStaticProps()  method returns props object used as a props for Home component in index.html
+   Note : getStaticProps()  method `returns props` object used as a props for Home component in index.html
 
 ## step -4
    * set layout for the entire app
    * create Layout component inside components folder
-   * create some Head , Box and any other things in Layout.
+   * create some `Head` , Box and any other things in Layout.
 
-   Note : Head Component comes from 'next/head' is used to provider headers or meta for that page.
+   Note : Head Component comes from `'next/head'` is used to provider` headers` or meta for that page.
 
-   * Whether here we are using ChakraUI . 
-     as per chakraUI requirement we have to wrap our Component with the help of ChakraProvider in the MyApp component in _app.js.
+   * Whether here we are using `ChakraUI` . 
+     as per chakraUI requirement we have to `wrap our Component` with the help of `ChakraProvider` in the MyApp component in _app.js.
    * first wrap Component in Layout and all are wrapped inside of ChakraProvider.
 
     
@@ -74,24 +74,24 @@ We are using here lots of library such as chakra-ui/react for styling the app al
    * at the end we just mount navbar and footer inside Layout Component. 
 
 ## step-06
-   * create a search filter page
+   * create a `search filter page`
    * create search.js inside pages folder
    * use state variable to apply toggle for searchFilter Component.
    * create searchFilter Component inside components.
 
 ## step-07
-   Note : "next/router"  provide router to get query or params of that page.
+   Note :` "next/router" ` provide router to get query or params of that page.
 
-   * getServerSideProps({query}) where query comes from router.
+   * `getServerSideProps({query})` where query comes from router.
    * fetch this query with fetchApi() returns a props object.
    * get props in Search component.
 
 ## step-08
-   * create a routing based dynamic file [id].js inside property folder.
+   * create a` routing based dynamic file [id].js` inside property folder.
    *  [id].js files contain PropertyDetails component is used to diplay 
        property details page.
    * component contains all the details of property in props which gets  
-     from getServerSideComponent() .
+     from `getServerSideComponent()` .
 
 ## step-09 
    * Create a ImageScrollbar component mounted in PropertyDetails Component
@@ -99,5 +99,5 @@ We are using here lots of library such as chakra-ui/react for styling the app al
      PropertyDetails component .
 
 ## step-10 
-   * Display Loading Status implement NProgess configure in MyApp  
+   * Display Loading Status implement `NProgess configure` in MyApp  
      component inisde _app.js .      
